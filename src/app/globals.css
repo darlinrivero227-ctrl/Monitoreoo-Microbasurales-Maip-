@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 20% 97%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 155 62% 40%;
+    --primary-foreground: 155 10% 98%;
+    --secondary: 150 15% 90%;
+    --secondary-foreground: 240 10% 3.9%;
+    --muted: 150 10% 94%;
+    --muted-foreground: 240 5% 45%;
+    --accent: 155 62% 40%;
+    --accent-foreground: 155 10% 98%;
+    --destructive: 0 77% 57%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 10% 90%;
+    --input: 150 10% 90%;
+    --ring: 155 62% 40%;
+    --chart-1: 155 62% 40%;
+    --chart-2: 155 40% 60%;
+    --chart-3: 155 20% 80%;
+    --chart-4: 0 77% 57%;
+    --radius: 1rem;
+  }
+  .dark {
+    --background: 155 40% 5%;
+    --foreground: 155 10% 98%;
+    --card: 155 40% 7%;
+    --card-foreground: 155 10% 98%;
+    --popover: 155 40% 7%;
+    --popover-foreground: 155 10% 98%;
+    --primary: 155 62% 50%;
+    --primary-foreground: 155 10% 10%;
+    --secondary: 155 30% 15%;
+    --secondary-foreground: 155 10% 98%;
+    --muted: 155 30% 15%;
+    --muted-foreground: 155 10% 65%;
+    --accent: 155 30% 15%;
+    --accent-foreground: 155 10% 98%;
+    --destructive: 0 77% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 155 30% 20%;
+    --input: 155 30% 20%;
+    --ring: 155 62% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.font-headline {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.card-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

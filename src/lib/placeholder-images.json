@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "maipu-park",
+      "description": "Un parque verde en Maipú con aire limpio",
+      "imageUrl": "https://picsum.photos/seed/maipu1/800/600",
+      "imageHint": "green park"
+    }
+  ]
+}
